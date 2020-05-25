@@ -5,10 +5,14 @@ import SignInForm from '../../style/auth/signinform';
 
 
 class SignIn extends Component {
+    onSubmit = (fields) => {
+        console.log('fields', fields);
+        
+    }
     render() {
         return ( 
             <div className= 'sign-in'> 
-                <SignInForm className='sign-in__form'/>
+                <SignInForm onSubmit={this.onSubmit} className='sign-in__form'/>
             </div>
         )
     }
