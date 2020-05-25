@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import SignInForm from '../../style/auth/signinform';
+
 import PageTitle from '../pageTitle';
+import SignInForm from './signinForm';
 
 
 

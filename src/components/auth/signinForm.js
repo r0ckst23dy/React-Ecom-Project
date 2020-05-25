@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
 
-import { FormInput, FormButton } from '../../components/formfields';
-import Details from '../../components/details';
+import { FormInput, FormButton } from '../formfields';
+import Details from '../details';
 import history from '../../history';
 
 
