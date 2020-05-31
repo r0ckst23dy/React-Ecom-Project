@@ -1,16 +1,30 @@
 import React, { Component } from 'react'; 
 
 class Details extends Component {
-    render() {
-        const {title, links, className} = this.props;
+    
+        renderChildren = () => {
+            const { links, info } = this.props;
+            let children = [];
+            if(links) { 
+                children = links.map(link => {
+                    return <a key={link.id} onClick={link.onClick} className='details__link'>{link.title}</a>
+                })
+            } else if(info) { 
+                children = info.map(item => { 
+                    return <div key={item.id} className='details__item'>{item.title}</div>
+                })
+            }
+            return children;
+        }
+
+        render() {
+        const { className, title } = this.props;
         return ( 
             <div className={`${className} details`}>
                 <div className='details__title'>{title}</div>
                 <div className='details__links'>
                     {
-                        links.map(link => {
-                            return <a key= {link.id} onClick={link.onClick} className='details__link'>{link.title}</a>
-                        })
+                        this.renderChildren()
                     }
                 </div>
             </div>
@@ -19,3 +33,4 @@ class Details extends Component {
 }
 
 export default Details;
+

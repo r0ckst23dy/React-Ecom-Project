@@ -8,69 +8,65 @@ import history from '../../history';
 
 
 
-class SignInForm extends Component {
+class SignUpForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
-        const links = [
+        const info = [
             {
                 id: 0,
-                title: 'At least 6 characters',
-                onClick: () => history.push('/signup')
-                
+                title: 'At least 6 characters'
             },
             {
                 id: 1,
-                title: "At least one number",
-                onClick: () => console.log('Forgot Password')
-                
+                title: "At least one number"
             },            
             {
                 id: 2,
-                title: 'At least one symbol',
-                onClick: () => console.log('Forgot Email')
+                title: 'At least one symbol'
                 
             }            
         ]
         return ( 
-            <form onSubmit={handleSubmit} className= {`${className} sign-in-form`}> 
+            <form onSubmit={handleSubmit} className= {`${className} sign-up-form`}> 
                 <Field 
-                    className='sign-in-form__name' 
+                    className='sign-up-form__name' 
                     type='name' 
-                    title='name'
+                    title='Name'
                     placeholder='Name' 
                     name='Name' 
                     component={FormInput}
                 />
 
                 <Field 
-                    className='sign-in-form__email' 
+                    className='sign-up-form__email' 
                     type='email' 
                     title='Email'
                     placeholder='Email' 
                     name='email' 
                     component={FormInput}
-                />
+                /> 
 
                 <Field 
-                    className='sign-in-form__password' 
+                    className='sign-up-form__password' 
                     type='password' 
                     title='Password'
                     placeholder='Password' 
                     name='password' 
                     component={FormInput}
                 /> 
+
                 <Field 
-                    className='sign-in-form__confirm-password' 
-                    type='confirm-password' 
-                    title='confirm-password'
+                    className='sign-up-form__confirm' 
+                    type='password' 
+                    title='Confirm Password'
                     placeholder='Confirm Password' 
                     name='Confirm Password' 
                     component={FormInput}
                 />                        
-                <div className='sign-in-form__line' />
+                <div className='sign-up-form__line' />
                 <Field 
-                    className='sign-in-form__back' 
-                    onClick={() => console.log("back it on up")}
+                    className='sign-up-form__back' 
+                    onClick={() => history.push('/signin')}
                     type='button' 
                     title='Back' 
                     name='back' 
@@ -78,21 +74,21 @@ class SignInForm extends Component {
                     component={FormButton}
                 /> 
                 <Field 
-                    className='sign-in-form__create-account' 
-                    onClick={() => console.log("submitting...maybe?")}
+                    className='sign-up-form__create' 
+                    onClick={() => history.push('/account')}
                     type='submit' 
                     title='Create Account' 
                     name='create-account' 
                     component={FormButton}
                 />                             
-                <Details className='sign-in-form__details' title='Password Requirements'links={links}/>                         
+                <Details className='sign-up-form__details' title='Password Requirements' info={info}/>                         
             </form>
         )
     }
 }
 
-SignInForm = reduxForm({
-    form: 'SignInForm'
-})(SignInForm);
+SignUpForm = reduxForm({
+    form: 'SignUpForm'
+})(SignUpForm);
 
-export default SignInForm;
+export default SignUpForm;
