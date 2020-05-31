@@ -16,6 +16,7 @@ import "./style/main.scss";
 import history from './history';
 import SignIn from "./components/auth/signin";
 import SignUp from "./components/auth/signup";
+import Account from "./components/account/account";
 
 
 
@@ -29,6 +30,7 @@ function main() {
             <Route path= '/' exact component={SignIn} />
             <Route path= '/signin' component={SignIn} />
             <Route path= '/signup' component={SignUp} />
+            <Route path= '/account'component={Account} />
           </Switch>
         </Layout>
       </Router>
