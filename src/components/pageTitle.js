@@ -1,6 +1,6 @@
 import React from 'react';
 
 export default function (props) {
-    const {title} = props;
-    return <div className='page-title'>{title}</div>
+    const {className, title} = props;
+    return <div  className={`${className} page-title`}>{title}</div>
 }
