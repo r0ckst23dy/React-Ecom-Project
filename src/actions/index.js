@@ -5,6 +5,7 @@ export {
     setHeaderLinks,
     setNavbarLinks,
     changeNavbarActive,
+    
     fetchUserPurchases,
     setPurchaseDetail
 };
