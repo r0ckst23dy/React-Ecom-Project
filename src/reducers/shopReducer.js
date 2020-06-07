@@ -5,7 +5,7 @@ import actions from "redux-form/lib/actions";
 
 const INITIAL_STATE = {
     categories: [],
-    productSelected: [],
+    filteredProducts: [],
     products: []
 }
 
@@ -23,11 +23,15 @@ export default function(state = INITIAL_STATE, action) {
                 products: action.payload
             }
         case FILTER_PRODUCTS_WITH_CATEGORY_ID:
-            console.log(action.payload);
-            
+            var filteredProducts = [];
+            state.products.map(product => {
+                if(product.belongsTo.includes(action.payload)) { 
+                    filteredProducts.push(product)
+                }
+            }) 
             return {
                 ...state,
-                
+                filteredProducts
             }
         default: return state
     }
