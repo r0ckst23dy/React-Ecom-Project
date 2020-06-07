@@ -8,7 +8,15 @@ import history from '../../history';
 
 
 class AccountInformationForm extends Component {
+    constructor() {
+        super();
+        this.state = {
+            showPasswords: false,
+
+        }
+    }
     render() {
+
         const { className, handleSubmit } = this.props;
 
         return ( 
@@ -66,16 +74,68 @@ class AccountInformationForm extends Component {
                     name='zipcode' 
                     component={FormInput}
                 />                 
-    
-                <Field 
-                    className='account-information-form__change-password' 
-                    onClick={() => console.log('trying to show buttons')}
-                    type='button' 
-                    labelTitle= "Password"
-                    title='Change Password' 
-                    name='Change Password' 
-                    component={LongGrayButton}
-                />  
+                <div className='account-information-form__line' />
+                {   this.state.showPasswords ?
+                            [
+                                <Field 
+                                key= {0}
+                                className='account-information-form__current' 
+                                type='current' 
+                                title='Current Password'
+                                placeholder='Current Password' 
+                                name='current' 
+                                component={FormInput}
+                                />,
+                                <Field 
+                                key= {1}
+                                className='account-information-form__new' 
+                                type='new' 
+                                title='New Password'
+                                placeholder='New Password' 
+                                name='new' 
+                                component={FormInput}
+                                />,                            
+                                <Field 
+                                key= {2}
+                                className='account-information-form__confirm' 
+                                type='confirm' 
+                                title='Confirm Password'
+                                placeholder='Confirm Password' 
+                                name='confirm' 
+                                component={FormInput}
+                                />,
+                                <div key= {3} className='account-information-form__line' />,
+                                <Field 
+                                key= {5}
+                                className='account-information-form__cancel' 
+                                onClick={() => this.setState({ showPasswords: false })}
+                                type='submit' 
+                                title='Cancel' 
+                                name='cancel'
+                                short= {true} 
+                                component={FormButton}
+                                />,
+                                <Field 
+                                    key= {4}
+                                    className='account-information-form__update-information' 
+                                    onClick={() => this.setState({ showPasswords: false })}
+                                    type='submit' 
+                                    title='Update Information' 
+                                    name='Update Information' 
+                                    component={FormButton}
+                                />                              
+                            ]                         
+                            :              
+                            <Field 
+                                className='account-information-form__change-password' 
+                                onClick={() => this.setState({ showPasswords:true })}
+                                type='button' 
+                                labelTitle= "Password"
+                                title='Change Password' 
+                                name='Change Password' 
+                                component={LongGrayButton}
+                            /> 
+                }
             </form>
         )
     }
