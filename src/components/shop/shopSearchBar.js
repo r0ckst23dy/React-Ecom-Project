@@ -12,7 +12,7 @@ class ShopSearchBar extends Component {
         const { className, handleSubmit } = this.props;
         return ( 
             <form className={`${className} shop-seach-bar`} onSubmit={handleSubmit}>
-                <Field className='shop-seach-bar__form-search-bar' name='shop-search-bar' placeholder='search' component={FormSearchBar} />
+                <Field className='shop-seach-bar__form-search-bar' name='query' placeholder='search' component={FormSearchBar} />
             </form>
         )
 
