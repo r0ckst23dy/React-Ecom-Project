@@ -9,7 +9,6 @@ function FormSearchBar(props) {
         </div>
     )
 }
-{/* <i class="fas fa-search"></i> */}
 class ShopSearchBar extends Component { 
     render() { 
         const { className, handleSubmit } = this.props;

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import * as actions from '../../actions';
 import ShopSearchBar from './shopSearchBar';
-import ShopProduct from '../../style/shop/shopProduct';
+import ShopProduct from '../shop/shopProduct';
 
 class Shop extends Component { 
     componentDidMount() {

@@ -74,14 +74,14 @@ export function fetchShopProducts() {
             {
                 _id: 0,
                 title: 'Javascript in the Browser',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,1]
             },
             {
                 _id: 1,
                 title: 'Graph Database',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,6]
                 
@@ -89,7 +89,7 @@ export function fetchShopProducts() {
             {
                 _id: 2,
                 title: 'Full Stack Development',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,1,4]
                 
@@ -97,7 +97,7 @@ export function fetchShopProducts() {
             {
                 _id: 3,
                 title: 'User Interface Design',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,2]
             },            
@@ -105,21 +105,21 @@ export function fetchShopProducts() {
 
                 _id: 4,
                 title: 'Javascript Development',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,1]
             },           
             {
                 _id: 5,
                 title: 'User Experience Design',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,2]
             },            
             {
                 _id: 6,
                 title: 'Advance OOP',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Beatae odio, voluptatem, veniam eius voluptate inventore minus adipisci, exercitationem consectetur repellat esse.Corporis quod, ad cum, incidunt harum eveniet dicta obcaecati autem laboriosam delectus nesciunt sapiente mollitia, illum pariatur adipisci animi eaque excepturi nihil deserunt minima esse earum officiis non ab! Deserunt.',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? Here is some placeholder text. Ya know, just some gobbadeegook for sample content. Is gobbadeegook even a real word? Who cares. It is just sample text',
                 price: 1.99,
                 belongsTo: [0,6]
             }
