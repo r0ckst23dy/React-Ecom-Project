@@ -16,7 +16,7 @@ function CartContent({className, products}) {
             <div className='cart-content__title'>
                 Cart ({count})
             </div>
-            <div className='cart-content__content'>
+            <div className='cart-content__products'>
                 {productsJSX}
             </div>
             <CartFooter className='cart-content__footer' products={products}/>         
@@ -47,7 +47,7 @@ class ShopCart extends Component {
         return (
             <div className= {`${className} shop-cart`}> 
                 <CartButton className='shop-cart__toggle' icon= 'fas fa-times'/>
-                <CartContent className='shop-cart__content' products={[561, 56894, 555]} />
+                <CartContent className='shop-cart__content' products={[561, 56894, 555, 561, 56894, 555, 561, 56894, 555, 561, 56894, 555, 561, 56894, 555]} />
             </div>
         )
     }
