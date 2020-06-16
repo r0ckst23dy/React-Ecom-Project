@@ -62,11 +62,12 @@
     }
 
     &__products { 
-        padding: 10px;
+        padding-top: 50px;
         grid-column: s/e;
         grid-row: products-s/products-e;
         display: grid;
         overflow-y: scroll;
+        grid-row-gap: 45px;
     }
 
     &__footer {
