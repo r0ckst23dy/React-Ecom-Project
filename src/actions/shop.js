@@ -76,14 +76,16 @@ export function fetchShopProducts() {
                 title: 'Javascript in the Browser',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,1]
+                belongsTo: [0,1],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 1,
                 title: 'Graph Database',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,6]
+                belongsTo: [0,6],
+                imageURL: 'http://via.placeholder.com/80x80'
                 
             },            
             {
@@ -91,7 +93,8 @@ export function fetchShopProducts() {
                 title: 'Full Stack Development',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,1,4]
+                belongsTo: [0,1,4],
+                imageURL: 'http://via.placeholder.com/80x80'
                 
             },            
             {
@@ -99,7 +102,8 @@ export function fetchShopProducts() {
                 title: 'User Interface Design',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,2]
+                belongsTo: [0,2],
+                imageURL: 'http://via.placeholder.com/80x80'
             },            
             {
 
@@ -107,21 +111,24 @@ export function fetchShopProducts() {
                 title: 'Javascript Development',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,1]
+                belongsTo: [0,1],
+                imageURL: 'http://via.placeholder.com/80x80'
             },           
             {
                 _id: 5,
                 title: 'User Experience Design',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,2]
+                belongsTo: [0,2],
+                imageURL: 'http://via.placeholder.com/80x80'
             },            
             {
                 _id: 6,
                 title: 'Advance OOP',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                 price: 1.99,
-                belongsTo: [0,6]
+                belongsTo: [0,6],
+                imageURL: 'http://via.placeholder.com/80x80'
             }
         ]
     })

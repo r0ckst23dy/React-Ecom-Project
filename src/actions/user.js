@@ -26,7 +26,8 @@ export function fetchCartProducts() {
                     title: 'Javascript in the Browser',
                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                     price: 1.99,
-                    belongsTo: [0,1]
+                    belongsTo: [0,1],
+                    imageURL: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -37,7 +38,8 @@ export function fetchCartProducts() {
                     title: 'Graph Database',
                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis, ad ab maxime tenetur totam explicabo modi? ',
                     price: 1.99,
-                    belongsTo: [0,6]
+                    belongsTo: [0,6],
+                    imageURL: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 1
                 
