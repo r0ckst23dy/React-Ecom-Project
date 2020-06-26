@@ -4,6 +4,7 @@ import { reduxForm, Field } from 'redux-form';
 
 import { FormInput, FormButton } from '../formfields';
 import history from '../../history';
+import OrderSummary from './orderSummary';
 
 
 
@@ -72,7 +73,7 @@ class ShippingForm extends Component {
                     name='use-this-address' 
                     component={FormButton}
                 />                             
-                        
+                <OrderSummary className='shipping-form__summary'/>
             </form>
         )
     }

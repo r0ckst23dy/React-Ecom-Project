@@ -1,0 +1,25 @@
+.underline-title {
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.info-title {
+    &__title {
+        font-size: 18px;
+    }
+
+    &__value { 
+        color: #00cb79;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.Sinfo-title-green { 
+    &__title {
+        font-weight: 600;
+        color: #00cb79;
+    }
+}
