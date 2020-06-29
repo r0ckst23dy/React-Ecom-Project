@@ -1,5 +1,5 @@
 import { setHeaderLinks, setNavbarLinks, changeNavbarActive } from './headernavbar';
-import { fetchUserPurchases, setPurchaseDetail, fetchCartProducts, addCartProduct } from './user';
+import { fetchUserPurchases, setPurchaseDetail, fetchCartProducts, addCartProduct, signIn } from './user';
 import { fetchShopCategories, fetchShopProducts, filterProductsWithCategoryId, filterProducstWithQuery } from './shop';
 
 export {
@@ -11,6 +11,7 @@ export {
     setPurchaseDetail,
     fetchCartProducts,
     addCartProduct,
+    signIn,
 
     fetchShopCategories,
     fetchShopProducts,

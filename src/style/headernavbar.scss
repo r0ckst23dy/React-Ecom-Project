@@ -27,6 +27,10 @@
             grid-row: s/e;
         }
         margin-right: 47px;
+
+        &:hover { 
+            cursor: pointer;
+        }
     }
 }
 .green-text { 
@@ -47,6 +51,10 @@
     font-weight: normal;
     & > * {
         grid-row: s/e;
+    }
+
+    &:hover { 
+        cursor: pointer;
     }
     
 

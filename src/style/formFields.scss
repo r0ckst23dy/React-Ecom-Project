@@ -19,7 +19,9 @@
         color: #333;
         font-size: 18px;
 
-
+        &:focus { 
+            outline:none;
+        }
     }
 }
 
