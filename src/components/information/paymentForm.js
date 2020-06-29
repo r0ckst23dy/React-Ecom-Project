@@ -5,6 +5,7 @@ import { reduxForm, Field } from 'redux-form';
 import { FormInput, FormButton } from '../formfields';
 import history from '../../history';
 import OrderSummary from './orderSummary';
+import { UnderlinedTitle } from './infoHelp';
 
 
 class PaymentForm extends Component {
@@ -64,6 +65,11 @@ class PaymentForm extends Component {
                     component={FormButton}
                 />              
                 <OrderSummary className='payment-form__order-summary'/>
+                <div className= 'payment-form__shipping-info shipping-info'>
+                    <UnderlinedTitle className='shipping-info__title' title='Shipping To'/>
+                    <div className='shipping-info__name small-text'>Jorden Hudgens</div>
+                    <div className='shipping-info__address small-text'>123 Address Rightchere</div>
+                </div>
             </form>
         )
     }
